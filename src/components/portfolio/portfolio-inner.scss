@@ -18,7 +18,7 @@
         margin-top: -40px;
     }
     .showcase{
-        margin-top: -10px;
+        margin-top: -40px;
     }
     .showcase3{
         margin-top: -10px;
@@ -108,7 +108,7 @@
 
     @media (max-width: 480px) { /* Mobile screens */
         .showcase{
-            margin-top: -5px;
+            margin-top: 0px;
         }
         .showcase2{
             margin-top: 0px;
@@ -134,8 +134,8 @@
             display: flex;
             flex-direction: column;
             position: absolute;
-            top: 40%;
-            left: 50%;
+            top: 50%;
+            left: 89%;
             transform: translate(-100%, -40%);
             text-align: center;
             justify-content: center;

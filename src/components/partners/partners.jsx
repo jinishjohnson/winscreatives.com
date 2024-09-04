@@ -8,7 +8,7 @@ const partners = () => (
   <>
   <div className="container cube">
 
-   <Title title="Clients." />
+   <Title title="Our Clients." />
 
   <div id="partners"> 
     
