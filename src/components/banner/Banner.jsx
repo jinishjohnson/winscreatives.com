@@ -7,7 +7,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 const Banner = () => {
   return (
-    <div>
+    <div >
       <video width="600" loop muted autoPlay>
         <source src={videoBg} type="video/mp4" />
         Your browser does not support the video tag.

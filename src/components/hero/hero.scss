@@ -97,7 +97,19 @@
       margin-top: -26px;
     }
     .hero-image{
+      display: none;
       margin-top: -25px;
+    }
+    .About-btn{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+      width: 50%;
+      margin-bottom: 10px;
+      margin-right: 0px;
+      margin-left: 90px;
     }
   }
 }

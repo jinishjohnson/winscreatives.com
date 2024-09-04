@@ -7,7 +7,8 @@ import LogoImg from '../../assets/navbar/logo (1).svg';
 import MobileMenuIcon from '../../assets/navbar/mobile-menu.svg';
 
 const DesktopNav = (props) => (
-  <nav className={`Navbar ${!props.userIsScrolled ? "extraLargeNavbar" : ""}`}>
+  <div id="nav">
+  <nav className={`Navbar ${!props.userIsScrolled ? "extraLargeNavbar" : ""}`} >
     <div className="wrapper flex-s-between">
       <div>
         <NavLink to="/" exact>
@@ -72,6 +73,7 @@ const DesktopNav = (props) => (
       </div>
     </div>
   </nav>
+  </div>
 );
 
 export default DesktopNav;

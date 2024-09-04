@@ -25,7 +25,7 @@ const Hero = () => {
                 We are the right firm if you require a memorable tagline, an eye-catching logo, a sensational video, or a thorough marketing plan. Get in touch with us right now, and allow us to demonstrate why we are Trivandrum's top advertising agency.
               </p>
               <Link to='/about'>
-              <AwesomeButton type="primary">Get know more</AwesomeButton>
+              <AwesomeButton type="primary" className="About-btn">Get know more</AwesomeButton>
               </Link>
             </div>
           </Col>

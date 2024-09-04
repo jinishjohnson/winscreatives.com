@@ -7,7 +7,8 @@ import CloseIcons from '../../assets/navbar/mobile-close.svg';
 import Logo from "../../assets/navbar/logo (1).svg";
 
 const mobileNav = (props) => (
-  <div className={`mobile__navbar ${props.isOpen ? "mobile__open" : ""}`}>
+  <div id="nav">
+  <div className={`mobile__navbar ${props.isOpen ? "mobile__open" : ""}`} id="nav">
     <div className="mobile__navbar-close" onClick={props.closeMobileMenu}>
       <img src={CloseIcons} alt="close" />
     </div>
@@ -92,6 +93,7 @@ const mobileNav = (props) => (
         </li>
       </ul>
     </div>
+  </div>
   </div>
 );
 

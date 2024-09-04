@@ -8,6 +8,7 @@ import ContactSocial from './contactInfo/contactSocial';
 import Modal from '../contact-modal/Modal';
 import { AwesomeButton } from "react-awesome-button";
 import 'react-awesome-button/dist/styles.css';
+import { useLocation } from "react-router-dom";
 
   
 import ContactBackground from '../../assets/contact/contactUs.gif';

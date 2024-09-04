@@ -2,7 +2,7 @@ import React from 'react';
 import './portfolios.css';
 import Title from '../ui-components/title/title';
 import { Link } from 'react-router-dom';
-import { TiArrowUp ,TiMediaPlay } from "react-icons/ti";
+import { TiArrowUp  } from "react-icons/ti";
 
 const cardDataset = [
     {
@@ -13,11 +13,11 @@ const cardDataset = [
     {
         image: "https://procreate-assets-cdn.procreate.art/img/b-series.a9a2d98.jpg",
         title: "Visual Ads",
-        button:  <TiMediaPlay className='play-icon'/>
+        button:  <TiArrowUp className="rotated-icon"/>
     },
     {
         image: "https://procreate-assets-cdn.procreate.art/img/education.3fa4906.jpg",
-        title: "Social ads",
+        title: "Social Media",
         button:  <TiArrowUp className="rotated-icon" />
     },
 ];

@@ -88,16 +88,13 @@ const SmData = [
 const PortfolioInner = () => {
   return (
     <>
+
       <div className="container-flex portfolioinner">
         <div className="background">
           <img src={Banner} alt="" className="Banner_img" />
           <div className="container titleW">
             <p className="TitleM">
               See Our Work <br className="non" /> in Action
-            </p>
-            <p className="descp">
-              Discover how our innovative approach has helped clients like you
-              achieve remarkable results.
             </p>
           </div>
 
