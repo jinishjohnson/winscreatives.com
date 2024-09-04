@@ -1,7 +1,23 @@
 @import '../../style/App.scss';
 
 .partner__box {
-  width: 170px;
-  height: 130px;
+  width: 150px;
+  height: 150px;
   margin: 0 auto;
+  transition: filter 0.5s ease, transform 0.5s ease;
+}
+.partner__box img{
+  width: 80%;
+  background-image: linear-gradientrgba(70, 130, 180, .8);
+  filter: grayscale(100%);
+  
+}
+.partner__box img:hover{
+  filter: grayscale(0%);
+  
+}
+
+@media (max-width:400px) {
+  
+  
 }

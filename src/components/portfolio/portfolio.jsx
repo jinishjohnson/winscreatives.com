@@ -15,6 +15,8 @@ import Preview6 from "../../assets/portfolio/project06/preview.png";
 import Button from "../ui-components/button/button";
 import Title from "../ui-components/title/title";
 import ProjectBox from "../ui-components/projectBox/projectBox";
+import { AwesomeButton } from "react-awesome-button";
+import 'react-awesome-button/dist/styles.css';
 
 class Portfolio extends React.Component {
   constructor(props) {
@@ -184,7 +186,7 @@ class Portfolio extends React.Component {
             {projectsRender}
           </Masonry>
           <Row className="flex-center padding40">
-            <Button label="HAVE WORK FOR US?" target={"contact"} />
+            <AwesomeButton type="primary" target={"contact"}>HAVE WORK FOR US?</AwesomeButton>
           </Row>
         </div>
       </div>

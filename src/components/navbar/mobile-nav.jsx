@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 // SCSS
 import "./navbar.scss";
 // Assets
@@ -13,7 +13,7 @@ const mobileNav = (props) => (
     </div>
     <div className="mobile__navbar-logo flex-center">
       <Link
-        to="hero"
+        to="/"
         spy={true}
         smooth={true}
         offset={0}
@@ -28,14 +28,14 @@ const mobileNav = (props) => (
         <li className="flex-center">
           <Link
             activeClass="active-link"
-            to="portfolio"
+            to="/"
             spy={true}
             smooth={true}
             offset={-70}
             duration={500}
             onClick={props.closeMobileMenu}
           >
-            WORK
+            HOME
           </Link>
         </li>
         <li className="flex-center">
@@ -49,6 +49,19 @@ const mobileNav = (props) => (
             onClick={props.closeMobileMenu}
           >
             ABOUT
+          </Link>
+        </li>
+        <li className="flex-center">
+          <Link
+            activeClass="active-link"
+            to="/team"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            onClick={props.closeMobileMenu}
+          >
+            TEAM
           </Link>
         </li>
         <li className="flex-center">

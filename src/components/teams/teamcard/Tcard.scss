@@ -1,0 +1,74 @@
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between the cards */
+    justify-content: space-between; /* Distribute cards evenly */
+  }
+  
+  .card-container {
+    perspective: 1000px;
+    width: calc(25% - 20px); /* Adjust the width to fit 4 cards in a row considering the gap */
+    margin-bottom: 20px; /* Add space between rows */
+  }
+  
+  .Tcard {
+    width: 100%; /* Ensure the card fills its container */
+    height: 300px; /* Fixed height for the card */
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+  
+  .Tcard-front,
+  .Tcard-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .Tcard-front {
+    background-color: transparent;
+  }
+  
+  .Tcard-back {
+    background-color:#e1e2e4;
+    transform: rotateY(180deg);
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .card-container:hover .Tcard {
+    transform: rotateY(180deg);
+  }
+  
+  @media (max-width: 1200px) {
+    .card-container {
+      width: calc(33.33% - 20px); /* 3 cards in a row on smaller screens */
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .card-container {
+      width: calc(50% - 20px); /* 2 cards in a row on tablets */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .card-container {
+      width: 100%;width: calc(100% - 20px);
+      margin-bottom: 75px;
+    }
+    .Tcard-back {
+        margin-top: 55px;
+        padding: 30px; /* Increase padding for more space */
+        height: 350px; /* Optionally increase height */
+      }
+   
+  }
+  

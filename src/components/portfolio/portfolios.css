@@ -1,0 +1,126 @@
+.showcase {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between columns */
+}
+
+.cardimge {
+    position: relative;
+    width: 100%;
+    height: 573px;
+    object-fit: cover; /* Ensure the image covers the entire area without stretching */
+    border-radius: 30px;
+    transform: scale(1);
+    transition: transform 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+    cursor: pointer;
+}
+
+.cardimge:hover {
+    transform: scale(1.05); /* Slightly larger scale for a more pronounced effect */
+}
+
+.showcase > div {
+    flex: 1 1 30%; /* Adjust this percentage to set three columns */
+    max-width: 40%;
+    position: relative;
+}
+
+.overlay-contents {
+    position: absolute;
+    bottom: 30%;
+    right: 22%;
+    transform-origin: bottom right; /* Ensure the button scales relative to its position */
+}
+
+.overlay-contents button {
+    position: absolute;
+    width: 60px; /* Ensures the button has equal width and height */
+    height: 60px; /* Ensures the button has equal width and height */
+    padding: 0; /* Removes padding to maintain the circular shape */
+    color: rgb(255, 255, 255);
+    border-radius: 50%; /* Makes the button a perfect circle */
+    border: none; /* Removes the border */
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.39);
+    backdrop-filter: blur(14px); 
+    cursor: pointer; /* Pointer on hover */
+    transform: scale(1);
+    transition: background-color 0.3s, transform 0.5s cubic-bezier(0.215, 0.610, 0.355, 1); /* Smooth transition */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Ensures the text or icon is centered */
+}
+
+.overlay-contents button:hover {
+    color: black;
+    background-color: rgba(241, 241, 241, 0.274); /* Optional: Add hover effect */
+    transform: inherit; /* Inherit the scale of the parent element */
+}
+
+.Card_title{
+    padding-top: 55px;
+    background-color: rgb(255, 255, 255);
+    font-size: 2.2em;
+    text-align: center;
+    text-transform: capitalize;
+    color: solid hsla(0, 0%, 0%, 0.952);
+}
+.rotated-icon{
+    transform: rotate(50deg);
+    font-size: 2.6em;
+    transition: traform 0.3s ease-in-out;
+}
+.play-icon{
+    font-size: 2.6em;
+    transition: traform 0.3s ease-in-out;
+    margin-left: 2px;
+}
+@media (max-width: 480px) {
+    .showcase {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px; /* Space between columns */
+    }
+
+    .cardimge {
+        position: relative;
+        width: 100%;
+        height: 473px;
+        object-fit: cover; /* Ensure the image covers the entire area without stretching */
+        border-radius: 30px;
+        transform: scale(1);
+        transition: transform 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+        cursor: pointer;
+    }
+
+    .cardimge:hover {
+        transform: scale(1.05); /* Slightly larger scale for a more pronounced effect */
+    }
+
+    .showcase > div {
+        display: flex;
+        flex-direction: column; /* Stack the image and title vertically */
+        max-width: 100%;
+        position: relative;
+    }
+
+    .Card_title {
+        padding-top: 10px; /* Adjust padding as needed */
+        background-color: transparent; /* Remove background color if needed */
+        font-size: 1.5em; /* Adjust font size for mobile view */
+        text-align: center;
+        color: hsla(0, 0%, 0%, 0.952);
+        margin-top: 15px; /* Space between the image and the title */
+    }
+
+    .overlay-contents {
+        position: absolute;
+        bottom: 30%;
+        right: 22%;
+        transform-origin: bottom right; /* Ensure the button scales relative to its position */
+    }
+}

@@ -3,7 +3,7 @@ import React from "react";
 import "./partnerBox.scss";
 
 const partnerBox = (props) => (
-  <div className="partner__box flex-center">
+  <div className={`partner__box flex-center ${props.className}`} >
     <img src={props.partner} alt="partner" />
   </div>
 );

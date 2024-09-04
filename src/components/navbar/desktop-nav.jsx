@@ -1,18 +1,18 @@
 import React from 'react';
-import { Link } from "react-scroll";
- // SCSS
+import { NavLink } from "react-router-dom";
+// SCSS
 import './navbar.scss';
 // Assets
 import LogoImg from '../../assets/navbar/logo (1).svg';
 import MobileMenuIcon from '../../assets/navbar/mobile-menu.svg';
 
-const desktopNav = (props) => (
+const DesktopNav = (props) => (
   <nav className={`Navbar ${!props.userIsScrolled ? "extraLargeNavbar" : ""}`}>
     <div className="wrapper flex-s-between">
       <div>
-        <Link to="hero" spy={true} smooth={true} offset={0} duration={500}>
+        <NavLink to="/" exact>
           <img src={LogoImg} alt="logo" className="pointer" />
-        </Link>
+        </NavLink>
       </div>
       <div className="mobile__menu" onClick={props.mobileMenuOpen}>
         <img src={MobileMenuIcon} alt="menu" />
@@ -20,24 +20,53 @@ const desktopNav = (props) => (
       <div className="desktop__menu">
         <ul className="flex-s-between">
           <li>
-            <Link activeClass="active-link" to="portfolio" spy={true} smooth={true} offset={-70} duration={500}>
-              WORK
-            </Link>
+            <NavLink
+              exact
+              to="/"
+              activeClassName="active-link"
+            >
+              HOME
+            </NavLink>
           </li>
           <li>
-            <Link activeClass="active-link" to="about" spy={true} smooth={true} offset={-70} duration={500}>
+            <NavLink
+              to="/about"
+              activeClassName="active-link"
+            >
               ABOUT
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link activeClass="active-link" to="/carrer">
+            <NavLink
+              to="/team"
+              activeClassName="active-link"
+            >
+              TEAM
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/portfolioinner"
+              activeClassName="active-link"
+            >
+              PORTFOLIO
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/career"
+              activeClassName="active-link"
+            >
               CAREER
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link activeClass="active-link" to="contact" spy={true} smooth={true} offset={-70} duration={500}>
+            <NavLink
+              to="/contact"
+              activeClassName="active-link"
+            >
               CONTACT
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>
@@ -45,4 +74,4 @@ const desktopNav = (props) => (
   </nav>
 );
 
-export default desktopNav;
+export default DesktopNav;

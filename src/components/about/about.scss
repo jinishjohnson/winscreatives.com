@@ -6,9 +6,22 @@
 #about p{
   text-align: justify;
 }
+.person2{
+  width: 100%;
+  margin-bottom: 1%;
+  padding-top: 30%;
+}
 
 @media screen and (max-width: 990px) {
   #about {
     text-align: center;
+    
   }
+}
+@media (max-width:400px){
+ #about{
+   margin-top: -40px;
+   
+} 
+  
 }

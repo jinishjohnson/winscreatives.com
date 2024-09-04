@@ -1,7 +1,7 @@
 @import '../../style/App.scss';
 
 #partners {
-  background-color: $light-color;
+  background-color: transparent;
   padding: 80px 0;
 }
 .partner-title{
@@ -9,3 +9,8 @@
   font-size: 24px;
   font-style: Bold;
 }
+  @media (max-width:450px) {
+    .cube{
+      margin-top: -40px;
+    }
+} 

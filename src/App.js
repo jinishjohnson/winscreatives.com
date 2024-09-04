@@ -7,13 +7,17 @@ import DesktopNav from './components/navbar/desktop-nav';
 import MobileNav from './components/navbar/mobile-nav';
 import Backdrop from "./components/navbar/backdrop";
 import Hero from './components/hero/hero';
-import Portfolio from "./components/portfolio/portfolio";
 import Partners from "./components/partners/partners";
 import About from "./components/about/about";
 import Contact from "./components/contact/contact";
 import Footer from "./components/footer/footer";
 import Banner from './components/banner/Banner';
 import Career from './components/career/career';
+import Team  from './components/teams/teams'
+import Portfolioinner from './components/portfolio/portfolio-inner';
+
+import Portfolios from './components/portfolio/Portfolios';
+// import CareerPopup from './components/career/careerpopup/CareerPopup';
 
 class App extends React.Component {
   state = {
@@ -82,18 +86,24 @@ class App extends React.Component {
                 <>
                   <Banner />
                   <Hero />
-                  <Portfolio />
-                  <Partners />
+                  <Portfolios/>
                   <About />
-                  <Contact />
-                  <Footer />
+                  <Partners />
+                  {/* <Contact  /> */}
                 </>
               }
             />
             <Route path="/career" element={<Career />} />
+          
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/about" element={<About />} />
+            <Route path='/team' element={<Team/>}/>
+            <Route path="/portfolioinner" element={<Portfolioinner />} />
+            
             {/* Add more routes here as needed */}
           </Routes>
         </Router>
+        <Footer />
       </div>
     );
   }

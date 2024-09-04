@@ -6,8 +6,12 @@ import Title from "../ui-components/title/title";
 import ContactInfo from './contactInfo/contactInfo';
 import ContactSocial from './contactInfo/contactSocial';
 import Modal from '../contact-modal/Modal';
+import { AwesomeButton } from "react-awesome-button";
+import 'react-awesome-button/dist/styles.css';
 
-import ContactBackground from '../../assets/contact/bg.png';
+  
+import ContactBackground from '../../assets/contact/contactUs.gif';
+
 
 class Contact extends React.Component {
   constructor(props) {
@@ -41,15 +45,15 @@ class Contact extends React.Component {
 
 
     // YOUR EMAIL.JS API KEY IN FORMAT user_xxxxxxxxxxxxxxxxxx
-    let API_KEY = "";
+    let API_KEY = "fcJLNr3o-UjAoyCdW";
 
     // YOUR EMAIL.JS TEMPLATE ID
-    let TEMPLATE_ID = "";
+    let TEMPLATE_ID = "template_awr36af";
 
 
 
 
-    emailjs.send("default_service", TEMPLATE_ID, template_params, API_KEY).then(
+    emailjs.send("service_kaeohqb","template_awr36af").then(
       function (response) {
         if (response.status === 200) {
           self.showSuccessModal();
@@ -87,6 +91,8 @@ class Contact extends React.Component {
   };
 
   render() {
+   
+
     let submitButtonRender = (
       <div className="small__button">
         <button aria-label="send message" type="submit" value="Send Message">
@@ -114,16 +120,32 @@ class Contact extends React.Component {
         {modalRender}
         <div className="wrapper">
           <Title title="CONTACT US." />
-          <p className="font12">
-          get in touch to learn more about our full service advertising offering and how it will <br></br>take your business to the next level.
+          <p className="font19">
+            get in touch to learn more about our full service advertising
+            offering and how it will <br></br>take your business to the next
+            level.
           </p>
 
           <Row className="padding40">
             <Col md={12} lg={6}>
               <form id="contact-form" onSubmit={this.handleSubmit}>
                 <h4 className="font30 weight800 padding30">Send Us Message.</h4>
-                <input type="text" placeholder="Name" required name="name" value={this.state.name} onChange={this.inputHandler} />
-                <input type="email" placeholder="Email" required name="email" value={this.state.email} onChange={this.inputHandler} />
+                <input
+                  type="text"
+                  placeholder="Name"
+                  required
+                  name="name"
+                  value={this.state.name}
+                  onChange={this.inputHandler}
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  required
+                  name="email"
+                  value={this.state.email}
+                  onChange={this.inputHandler}
+                />
                 <textarea
                   rows="6"
                   cols="50"
@@ -133,7 +155,7 @@ class Contact extends React.Component {
                   value={this.state.message}
                   onChange={this.inputHandler}
                 ></textarea>
-                {submitButtonRender}
+                <AwesomeButton type="primary" className="btn">Send Message</AwesomeButton>
               </form>
             </Col>
             <Col md={12} lg={6}>

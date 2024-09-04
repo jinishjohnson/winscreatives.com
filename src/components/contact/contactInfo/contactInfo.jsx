@@ -25,7 +25,7 @@ Sasthamangalam, "
         <Col xs={12} lg={3} className="contact__info">
           <ContactInfoBox
             icon={ContactInfoIcon2}
-            textLine1="+91-8304838318"
+            textLine1="+91_8304838318"
             textLine2=""
           />
         </Col>

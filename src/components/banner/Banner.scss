@@ -17,6 +17,17 @@ video{
   color: white;
   font: 'San Francisco', Helvetica, Arial, san-serif;
 }
+// .overlay::after{
+//   content: "";
+//   position: absolute;
+//   display: block;
+//   bottom: 50px!important;
+//   left: 0;
+//   margin-top: 20px;
+//   width: 100%;
+//   height: 45%;
+//   background: linear-gradient(0deg, #ffffff 5%, rgba(255, 255, 255, 0.096) 75%, transparent);
+// }
 .overlay h1{
   font-size: 5em;
   
@@ -43,6 +54,17 @@ video{
   }
   .overlay h1{
     font-size: 2.5em;
+  }
+  .overlay h3{
+    font-size: 1.5em;
+    text-align: start;
+  }
+  .typer{
+    font-size: 13px!important;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
   }
  
 

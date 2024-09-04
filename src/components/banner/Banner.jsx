@@ -4,6 +4,7 @@ import "../banner/Banner.scss";
 import { TypeAnimation } from 'react-type-animation';
 
 
+
 const Banner = () => {
   return (
     <div>
@@ -40,8 +41,9 @@ const Banner = () => {
       ]}
       wrapper="span"
       speed={50}
-      style={{ fontSize: '2em', display: 'inline-block' }}
+      style={{ fontSize: '2em', display: 'inline-block'  }}
       repeat={Infinity}
+      className="typer"
     />
       </div>
     </div>

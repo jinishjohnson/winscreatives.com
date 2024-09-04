@@ -1,7 +1,5 @@
 @import '../../../style/App.scss';
 
-
-
 .contact__social {
   width: 100%;
   margin: 60px 0 10px 0;
@@ -10,19 +8,62 @@
 }
 
 .contact__social:hover {
-  filter: invert(77%) sepia(99%) saturate(652%) hue-rotate(354deg) brightness(98%) contrast(111%);
+  filter: invert(72%) sepia(71%) saturate(189%) hue-rotate(510deg) brightness(88%) contrast(95%);
+  animation: bounce 0.6s;
+  animation-iteration-count: infinite;
+}
+.mobile-social{
+  display: none;
 }
 
 
-
 @media screen and (max-width: 990px) {
-
-
   .contact__social {
     text-align: center;
     width: 100%;
     img {
       margin: 0 auto;
     }
+  }
+  .platform {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .contact__social {
+    display: none;
+  }
+  
+  .mobile-social {
+    display: block;
+    margin-top: 50px;
+  }
+  
+  .platform {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    backdrop-filter: blur(180px);
+    height: 100%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding-left: 50px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .platform img {
+    width: 15%;
+    animation: bounce 1.9s;
+    animation-iteration-count: infinite;
+  }
+
+  h1 {
+    font-size: 20px;
+    text-shadow: 2px 2px 2px 0.8px;
   }
 }

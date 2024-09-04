@@ -6,16 +6,16 @@ import Title from "../ui-components/title/title";
 
 const partners = () => (
   <>
-  <div className="container">
+  <div className="container cube">
 
    <Title title="Clients." />
-  </div>
 
   <div id="partners"> 
     
     <div className="wrapper">
       <Swiper/>
     </div>
+  </div>
   </div>
   </>
 );
