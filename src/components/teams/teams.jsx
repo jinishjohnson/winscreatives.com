@@ -12,6 +12,7 @@ import CardImg6 from "../../assets/about/blal.png";
 import CardImg7 from "../../assets/about/aka.png";
 import CardImg8 from "../../assets/about/jib.png";
 import CardImg9 from "../../assets/about/nithin.png";
+import CardImg10 from "../../assets/about/jini.png"
 import PageHeader from "../ui-components/page-header/pageheader";
 
 const cardData = [
@@ -58,8 +59,21 @@ const cardData = [
   {
     image: CardImg9,
     title: "Nithin",
-    description: "",
+    description: "Vehicle Coordinator",
   },
+  {
+    image:CardImg10,
+    title:"Jinish Johnson",
+    description:"Full Stack Developer"
+  },
+  {
+    image:CardImg9,
+    title:"Anandhu",
+    description:"jr.Accountant"
+  },
+   {
+    
+  }
   // Add more card objects as needed
 ];
 

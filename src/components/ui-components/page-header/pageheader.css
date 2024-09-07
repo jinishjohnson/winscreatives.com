@@ -49,16 +49,16 @@
     .TitleM{
         text-align: start;
         line-height: 40px;
-        font-size: 3em;
+        font-size: 2em;
         font-weight: bolder;
-        width: 100%;
+        width: 80%;
     }
-    .non{
+    /* .non{
         display: none;
     }
-    
+     */
     .descp{
-        font-size: 0.9em;
+        font-size: 0.8em!important;
         margin-top: 6px;
         text-align: start;
         font-weight: 200!important;

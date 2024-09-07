@@ -13,7 +13,7 @@ const About = () => {
   const location = useLocation();
 
   return (
-    <div id="about">
+    <>
       {location.pathname === "/about" && (
         <PageHeader titleSen="Our Story," titleFir="Your Success." className="pgheader" />
       )}
@@ -31,7 +31,7 @@ const About = () => {
           </Col>
         </Row>
       </div>
-    </div>
+    </>
   );
 };
 

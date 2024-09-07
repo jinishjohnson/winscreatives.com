@@ -1,0 +1,17 @@
+.icon-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Add some space between icon groups */
+  
+    i {
+      margin-right: 10px; /* Add space between the icon and text */
+      font-size: 1.5rem; /* Adjust the size of the icon */
+    }
+  
+    p {
+      margin: 0; /* Remove default margin */
+      text-align: justify;
+      text-wrap: wrap;
+    }
+  }
+  

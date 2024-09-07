@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 // SCSS
 import "./navbar.scss";
 // Assets
@@ -65,6 +66,19 @@ const mobileNav = (props) => (
             TEAM
           </Link>
         </li>
+        <li className="flex-center">
+          <Link
+            activeClass="active-link"
+            to="/portfolioinner"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            onClick={props.closeMobileMenu}
+          >
+            PORTFOLIO
+          </Link>
+          </li>
         <li className="flex-center">
           <Link
             activeClass="active-link"

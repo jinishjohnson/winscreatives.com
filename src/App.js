@@ -1,14 +1,16 @@
 import React from 'react';
 import './style/App.scss';
+// import './style/nightmode.scss'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Components
+import Darkmode from './components/ui-components/nightmmode/DarkMode.jsx'
 import DesktopNav from './components/navbar/desktop-nav';
 import MobileNav from './components/navbar/mobile-nav';
 import Backdrop from "./components/navbar/backdrop";
 import Hero from './components/hero/hero';
 import Partners from "./components/partners/partners";
-import About from "./components/about/about";
+import About from './components/about/about'
 import Contact from "./components/contact/contact";
 import Footer from "./components/footer/footer";
 import Banner from './components/banner/Banner';
@@ -17,6 +19,7 @@ import Team  from './components/teams/teams'
 import Portfolioinner from './components/portfolio/portfolio-inner';
 
 import Portfolios from './components/portfolio/Portfolios';
+import DarkMode from './components/ui-components/nightmmode/DarkMode.jsx';
 // import CareerPopup from './components/career/careerpopup/CareerPopup';
 
 class App extends React.Component {
@@ -87,7 +90,6 @@ class App extends React.Component {
                   <Banner />
                   <Hero />
                   <Portfolios/>
-                  <About />
                   <Partners />
                   {/* <Contact  /> */}
                 </>
@@ -103,6 +105,10 @@ class App extends React.Component {
             {/* Add more routes here as needed */}
           </Routes>
         </Router>
+        <div className="Dmode">
+
+        <DarkMode/>
+        </div>
         <Footer />
       </div>
     );

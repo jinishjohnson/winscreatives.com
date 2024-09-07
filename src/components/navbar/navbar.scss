@@ -71,16 +71,21 @@
   position: fixed;
   top: 0;
   right: -100%;
-  background-color: $black-color;
+  background-color: rgba(7, 41, 69, 0.767);
+  backdrop-filter: blur(14px);
   z-index: 1000;
   width: 50%;
   transition: 0.4s ease;
   padding: 20px;
   overflow-y: auto;
+  color: #ffffff!important;
 
   .mobile__navbar-close {
+    width: 50px!important;
     padding: 20px;
-    margin-right: 80%;
+    position: absolute; // Position it absolutely within the navbar
+    right: 55px; // Move the close button to the right side
+    top: 2px ;// Adjust the top position as needed
     cursor: pointer;
 
     img {
@@ -94,6 +99,8 @@
     width: 100%;
     cursor: pointer;
     padding-right: 73px;
+    display: none;
+
   }
 
   .mobile__navbar-menu {
@@ -106,7 +113,8 @@
         padding: 5% 0;
 
         &.active-link {
-          font-weight: bold; // Active link should be bold
+          font-weight: bold!important; // Active link should be bold
+
         }
       }
 

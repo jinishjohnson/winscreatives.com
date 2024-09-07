@@ -16,7 +16,7 @@ const contactInfo = () => (
       <Row center="xs">
         <Col xs={12} lg={3} className="contact__info">
           <ContactInfoBox
-            icon={ContactInfoIcon1}
+           
             textLine1="A37, Sreerangam Ln,
 Sasthamangalam, "
             textLine2="Thiruvananthapuram, Kerala 695010"
@@ -24,14 +24,14 @@ Sasthamangalam, "
         </Col>
         <Col xs={12} lg={3} className="contact__info">
           <ContactInfoBox
-            icon={ContactInfoIcon2}
+            
             textLine1="+91_8304838318"
             textLine2=""
           />
         </Col>
         <Col xs={12} lg={3} className="contact__info">
           <ContactInfoBox
-            icon={ContactInfoIcon3}
+            
             textLine1="info@winscreatives.com"
             textLine2="winscreatives@gmail.com"
           />
@@ -41,4 +41,4 @@ Sasthamangalam, "
   </Row>
 );
 
-export default contactInfo;
+export default contactInfo

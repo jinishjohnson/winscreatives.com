@@ -1,5 +1,17 @@
 @import './colors.scss';
 
+/* Light Mode */
+body[data-theme="light"] {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark Mode */
+body[data-theme="dark"] {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
 
 /* Box sizing rules */
 *,
@@ -301,4 +313,10 @@ p {
   --button-danger-color-hover: #bc2c2c;
   --button-danger-color-active: #af2929;
   --button-danger-border: none;
+}
+.Dmode{
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  z-index: 1000;
 }

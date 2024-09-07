@@ -2,13 +2,12 @@ import React from "react";
 import { Row, Col } from "react-flexbox-grid";
 import "./contact.scss";
 import * as emailjs from "emailjs-com";
-import Title from "../ui-components/title/title";
-import ContactInfo from './contactInfo/contactInfo';
+import Contactinfo from "./contactInfo/contactinfo"
 import ContactSocial from './contactInfo/contactSocial';
 import Modal from '../contact-modal/Modal';
 import { AwesomeButton } from "react-awesome-button";
 import 'react-awesome-button/dist/styles.css';
-import { useLocation } from "react-router-dom";
+import PageHeader from "../../components/ui-components/page-header/pageheader"
 
   
 import ContactBackground from '../../assets/contact/contactUs.gif';
@@ -117,15 +116,19 @@ class Contact extends React.Component {
       modalRender = <Modal closeModal={this.closeModal} status="error" />;
     }
     return (
-      <div id="contact">
+      <>
+      <div className="container-flex">
+      <PageHeader className="contactPageheader" titleSen="Let's Talk" />
+      </div>
         {modalRender}
-        <div className="wrapper">
-          <Title title="CONTACT US." />
+        <div className="container">
+        {/* <h2>Ready to take your business to the next level? Contact us today to schedule a consultation.</h2> */}
+          {/* <Title title="CONTACT US." />
           <p className="font19">
             get in touch to learn more about our full service advertising
             offering and how it will <br></br>take your business to the next
             level.
-          </p>
+          </p> */}
 
           <Row className="padding40">
             <Col md={12} lg={6}>
@@ -165,10 +168,10 @@ class Contact extends React.Component {
               </div>
             </Col>
           </Row>
-          <ContactInfo />
+          <Contactinfo/>
           <ContactSocial />
         </div>
-      </div>
+      </>
     );
   }
 };

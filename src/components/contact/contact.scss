@@ -7,6 +7,10 @@
 .btn{
   margin-top: 18px;
 }
+.contactPageheader{
+  margin-top:-40px;
+  
+}
 
 .small__button {
   button {
@@ -123,6 +127,11 @@ textarea:active, textarea:focus {
 @media screen and (max-width:565px) {
   #contact{
     margin-top: -140px;
+  }
+  .contactPageheader{
+    width:100%;
+    margin-top: 100px;
+    font-size: 4em!important;
   }
   
 }

@@ -30,7 +30,8 @@ const Portfolios = () => {
         <div className="showcase">
           {cardDataset.map((item, index) => (
             <div className="card-port" key={index}>
-              <img src={item.image} alt="Card image cap" className="cardimge" />
+              <Link to="/portfolioinner">
+              <img src={item.image} alt="Card image cap" className="cardimge" /></Link>
               <div className="overlay-contents">
                 <Link to="/portfolioinner">
                 <button>{item.button}</button>
